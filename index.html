@@ -1,95 +1,48 @@
-<html>
-    <head>
-        <title> Sheee on the browser</title>
-        <link rel="shortcut icon" href="~/Users/alice/Documents/Shee/images/image.png">
-       
-    </head>
-    <body>
-        <h2> Sheee on the browser</h2>
-        <h3> Sheee on the browser</h3>
-        <h4> Sheee on the browser</h4>
-        <h5> Sheee on the browser</h5>
-        <h6> Sheee on the browser</h6>
-        <!--Links-->
-        <a href="./about.html" >Go to About Us </a>
-
-      <!-- Paragraph -->
-        <p> <b>Lorem Ipsum</b> is simply dummy text of the printing and <i>typesetting industry</i>. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-
-        <!-- ordered list -->
-        <ol>
-            <li> apples</li>
-            <li> Kiwi</li>
-            <li> bananas</li>
-            <li> peach </li>
-        </ol>
-
-        <!-- unordered list -->
-        <ul>
-            <li> apples</li>
-            <li> Kiwi</li>
-            <li> bananas</li>
-            <li> peach </li>
-        </ul>
-
-        <!-- image -->
-        <img src="./images/image.png" alt="image will appear here" />
-
-         <!-- table -->
-         <table border="1">
-            <tr>
-                <th> item Number</th>
-                <th> item Name </th>
-            </tr>
-
-            <tr>
-                <td>1</td>
-                <td>Apple</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>peach</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>strawberry</td>
-            </tr>
-         </table>
-
-         <!-- form  -->
-         <form style="background-color: blanchedalmond;">
-            <label for="fname"> First Name </label>
-        <input type="text" id="fname" name="fname" placeholder="please enter your name..." required />
-
-        <label for="lname"> Last Name </label>
-        <input type="date" id="lname" name="lname" placeholder="please enter your name..." required />
-
-        <br/>
-        <hr/>
-        <vr/>
-         
-        <label> Age </label>
-         <input type="number" placeholder="please enter your age..." />
-
-         <input type="password" placeholder="..." />
-         <input type="email" placeholder="please enter your email..." />
-         <input type="checkbox"/> Agree to Terms and Conditions 
-         <input type="radio" /> Yes
-
-         <textarea placeholder="not more than 250 words..."> Reveiew </textarea>
-
-         <select>
-            <option> red </option>
-            <option> yellow </option>
-            <option> green </option>
-         </select>
-
-
-              <!-- button  -->
-         <button style="color:red; margin: 15px; padding-left: 4px;"> Register </button>
-         </form>
-
-      <p style="margin-top: 5px;"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: black;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: fixed;
+        
+        }
+        .modal {
+            background-color: #000000;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            justify-content: center;
+            left: 50%;
+            top: 50%;
+        
+        }
+        .image{
+            z-index: 0;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div> <img src="images/image.png"/> </div>
+     <div class="overlay">  </div>
+     <div class="modal"> 
+        <label> Name: 
+            <input placeholder="name"/>
+        </label>
+         </div>
+    </div>
+</body>
 </html>
