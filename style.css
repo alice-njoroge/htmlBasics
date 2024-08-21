@@ -1,3 +1,24 @@
+.buttonClass{
+  background-color: white;
+}
+
+.buttonClass:hover{
+  background-color: green;
+}
+
+a{
+  color:blue
+}
+a:visited{
+  color: grey;
+}
+a:active{
+  color: red;
+}
+a:hover{
+  color: rgb(255, 0, 200);
+}
+
 /* Reset some default styling */
 body, h1, h2, p {
   margin: 0;
@@ -63,7 +84,7 @@ body {
 
 /* Card hover effect */
 .card:hover {
-  transform: translateY(-5px);
+  transform: translate(50px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
